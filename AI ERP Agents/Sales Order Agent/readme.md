@@ -106,7 +106,7 @@ Features:
 After importing the sales order agent solution, consider the following to make the agent work for your specific needs and data:
  - **Update the Tools inputs** – open the agent, and from the Tools tab open and review all the tools inputs: company code (by default usmf) and mailbox (test email address) must be updated.
 
-  - **Update the Finance and Operation connection** – Open the agent flows for creating sales order header and creating sales order lines and update the Finance and Operations URL. After making the change, save and publish the 2 agent flows.
+  - **Update the Finance and Operation connection** – Open the agent flows for creating sales order header and creating sales order lines (SO V2 - Create Sales Order Items) and update the Finance and Operations URL. After making the change, save and publish the 2 agent flows.
 
  - **Customer validation** - Sales order processor validates customer name, and if not found, will search using the email address if available in the document. The agent flows validating the customer depends on the json extracted to contain the column **deliveryCustomername**. Consider if this is necessary for your organization, and update as needed e.g. identifying customer by VAT Number if its provided – if you'd like to change the customer validation criteria, ensure to update: the document processor extraction prompt to collect the required fields and the Get Customer Number agent flow filter criteria accordingly.
 
